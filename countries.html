@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #country-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      padding: 20px;
+    }
+    .countryStyle, .text{
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin: 10px 0px;
+      background-color: rgba(220, 220, 220, 0.345);
+      border-radius: 5px;
+    }
+    .flag{
+      width: 100%;
+    }
+    body{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+    
+    @media only screen and (max-width: 500px) {
+      #country-container{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="text">All Countries List</h1>
+
+  <div id="country-container">
+
+  </div>
+
+  <script src="./countries.js"></script>
+</body>
+</html>
